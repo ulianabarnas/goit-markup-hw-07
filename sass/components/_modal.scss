@@ -1,7 +1,3 @@
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-}
-
 .modal {
     position: absolute;
     top: 50%;
@@ -18,6 +14,10 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--duration) var(--timing-function);
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 
 .close-btn {
@@ -38,14 +38,14 @@
     cursor: pointer;
 }
 
-.close-btn:hover .close-icone,
-.close-btn:focus .close-icone {
-    fill: var(--accent-color);
-}
-
 .close-icone {
     fill: #000000;
     transition: fill var(--duration) var(--timing-function);
+
+    .close-btn:hover &,
+    .close-btn:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .call-to-action {

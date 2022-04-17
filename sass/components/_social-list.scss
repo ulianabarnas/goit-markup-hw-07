@@ -1,35 +1,35 @@
 .social-list {
     display: flex;
     justify-content: center;
-}
 
-.social-list .item:not(:last-child) {
-    margin-right: 10px;
-}
+    .item:not(:last-child) {
+        margin-right: 10px;
+    }
 
-.social-list .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--icon-color);
+    .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: var(--icon-color);
+    
+        transition: background-color var(--duration) var(--timing-function);
 
-    transition: background-color var(--duration) var(--timing-function);
-}
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
 
-.social-list .link:hover,
-.social-list .link:focus {
-    background-color: var(--accent-color);
-}
+    .icon {
+        fill: var(--icon-color);
+        transition: fill var(--duration) var(--timing-function);
+    }
 
-.social-list .icon {
-    fill: var(--icon-color);
-    transition: fill var(--duration) var(--timing-function);
-}
-
-.social-list .link:hover .icon,
-.social-list .link:focus .icon {
-    fill: var(--extra-text-color);
+    .link:hover .icon,
+    .link:focus .icon {
+        fill: var(--extra-text-color);
+    }
 }

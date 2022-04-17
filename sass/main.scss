@@ -1,11 +1,13 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/placeholders";
 
 @import "./base/common";
 @import "./base/container";
 
 @import "./components/logo";
 @import "./components/section";
+@import "./components/main-title";
 @import "./components/section-title";
 @import "./components/subtitle";
 @import "./components/button";
