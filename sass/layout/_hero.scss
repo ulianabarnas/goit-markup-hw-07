@@ -4,7 +4,28 @@
     text-align: center;
 }
 
-.button.primary {
+.hero-overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+}
+
+.hero-main-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.button_primary {
     min-width: 200px;
     padding: 10px 20px;
     color: var(--extra-text-color);
@@ -17,18 +38,4 @@
     &:focus {
         background-color: var(--button-primary-hover-focus);
     }
-}
-
-.overlay {
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
 }
